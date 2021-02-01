@@ -11,7 +11,7 @@ if (!isset($_SESSION['auth_secret'])) {
 
 
 
-
+$qrCodeUrl = $Authenticator->getQR('umesh', $_SESSION['auth_secret']);
 
 if (!isset($_SESSION['failed'])) {
     $_SESSION['failed'] = false;
